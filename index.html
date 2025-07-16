@@ -39,8 +39,20 @@
     }
 
     .logo {
-      max-width: 80px;
+      max-width: 100px;
       margin-bottom: 1rem;
+    }
+
+    nav {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: var(--main-color);
+      font-weight: bold;
     }
 
     main {
@@ -73,6 +85,12 @@
       margin-left: 1.5rem;
     }
 
+    .qr-code {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
     footer {
       text-align: center;
       padding: 1rem;
@@ -97,8 +115,13 @@
     <p>Pavel Stehlík &ndash; revizní technik elektro E2A</p>
   </header>
 
+  <nav>
+    <a href="#sluzby">Služby</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
   <main>
-    <section>
+    <section id="sluzby">
       <h2>Služby</h2>
       <p>Provádím odborné revize elektrických instalací a zařízení do 1000 V. Specializuji se na kontrolu antistatických podlah dle platných norem a reviduji pouze zařízení v nevýbušném prostředí.</p>
       <ul>
@@ -110,12 +133,15 @@
       </ul>
     </section>
 
-    <section class="contact">
+    <section id="kontakt" class="contact">
       <h2>Kontakt</h2>
       <p><strong>Adresa:</strong> Prescom, s.r.o., Čechova 871, 66501 Rosice</p>
-      <p><strong>Telefon:</strong> <a href="tel:+420739535835">739 535 834</a></p>
+      <p><strong>Telefon:</strong> <a href="tel:+420739535834">739 535 834</a></p>
       <p><strong>Email:</strong> <a href="mailto:stehlik@pres-com.cz">stehlik@pres-com.cz</a></p>
       <p><strong>IČ: </strong>253 17 130 Plátce DPH</p>
+      <div class="qr-code">
+        <img src="qr-kontakt.png" alt="QR kód s kontaktem" width="120" height="120">
+      </div>
     </section>
   </main>
 
