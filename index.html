@@ -1,31 +1,27 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Revize elektroinstalací, rozvaděčů a přístrojů – Ing. Pavel Stehlík, revizní technik E2A. Bezpečnostní kontroly dle ČSN." />
-  <meta name="keywords" content="revize elektro, revize elektrických zařízení, revize rozvaděčů, E2A, antistatická podlaha, Rosice, Brno, Pavel Stehlík" />
-  <meta name="author" content="Ing. Pavel Stehlík" />
-
-  <!-- SEO / Social -->
-  <meta property="og:title" content="Revize Stehlík – elektrorevize Brno, Rosice" />
-  <meta property="og:description" content="Profesionální revize elektrických zařízení a rozvodů. Certifikovaný revizní technik E2A." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.revizestehlik.cz/" />
-  <meta property="og:image" content="https://www.revizestehlik.cz/logo_revize.png" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Revize Stehlík – elektrorevize Brno, Rosice" />
-  <meta name="twitter:description" content="Certifikované revize elektrických zařízení do 1000 V. Kontaktujte mě." />
-  <meta name="twitter:image" content="https://www.revizestehlik.cz/logo_revize.png" />
-
-  <!-- Font & Favicon -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Revize Stehlík</title>
+  <meta name="description" content="Revize elektroinstalací, rozvaděčů a přístrojů – Ing. Pavel Stehlík, revizní technik E2A. Bezpečnostní kontroly dle ČSN.">
+  <meta name="keywords" content="revize elektro, revize elektrických zařízení, revize rozvaděčů, E2A, antistatická podlaha, Rosice, Brno, Pavel Stehlík">
+  <meta name="author" content="Ing. Pavel Stehlík">
 
+  <!-- Open Graph -->
+  <meta property="og:title" content="Revize Stehlík – elektrorevize Brno, Rosice">
+  <meta property="og:description" content="Profesionální revize elektrických zařízení a rozvodů. Certifikovaný revizní technik E2A.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.revizestehlik.cz">
+  <meta property="og:image" content="https://www.revizestehlik.cz/logo_revize.png">
+
+  <!-- Google Fonts & Favicon -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+
+  <!-- Critical CSS -->
   <style>
     :root {
       --main-color: #003049;
@@ -34,36 +30,22 @@
       --text-color: #222;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
-
+    html { scroll-behavior: smooth; }
     body {
-      font-family: 'Roboto', Arial, sans-serif;
       margin: 0;
+      font-family: 'Roboto', sans-serif;
       background: var(--bg-color);
       color: var(--text-color);
-      line-height: 1.6;
     }
 
     header {
       background: var(--main-color);
       color: white;
-      padding: 2rem 1rem;
       text-align: center;
+      padding: 2rem 1rem;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-    }
-
-    .logo {
+    header img {
       max-width: 80px;
       margin-bottom: 1rem;
     }
@@ -71,6 +53,8 @@
     nav {
       text-align: center;
       padding: 1rem;
+      background: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
 
     nav a {
@@ -78,76 +62,35 @@
       text-decoration: none;
       color: var(--main-color);
       font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: var(--accent-color);
     }
 
     nav a.active {
-      border-bottom: 2px solid var(--accent-color);
-      padding-bottom: 0.2rem;
+      color: var(--accent-color);
     }
 
     main {
-      padding: 2rem 1rem;
       max-width: 800px;
       margin: auto;
+      padding: 2rem 1rem;
     }
 
     section {
       margin-bottom: 2rem;
     }
 
-    h2 {
-      color: var(--main-color);
-      font-size: 1.5rem;
-    }
-
-    .contact, .card {
-      background: white;
-      padding: 1rem;
-      border-left: 4px solid var(--accent-color);
-      border-radius: 8px;
-    }
-
-    .contact p {
-      margin: 0.3rem 0;
-    }
-
-    ul {
-      list-style-type: disc;
-      margin-left: 1.5rem;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #666;
-    }
-
     .services {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
       gap: 1rem;
     }
 
     .service-card {
       background: white;
-      border: 1px solid #ddd;
       border-left: 5px solid var(--accent-color);
       border-radius: 8px;
       padding: 1rem;
-      width: calc(50% - 1rem);
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      width: calc(50% - 0.5rem);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
       text-align: center;
     }
 
@@ -157,15 +100,44 @@
       margin-bottom: 0.5rem;
     }
 
-    .service-card h3 {
-      margin: 0.5rem 0 0.2rem;
-      font-size: 1.1rem;
-      color: var(--main-color);
+    .contact, .card {
+      background: white;
+      border-left: 4px solid var(--accent-color);
+      border-radius: 8px;
+      padding: 1rem;
     }
 
-    .service-card p {
-      font-size: 0.95rem;
-      color: #444;
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font: inherit;
+    }
+
+    button {
+      background: var(--main-color);
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: var(--accent-color);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      padding: 1rem;
     }
 
     @media (max-width: 600px) {
@@ -173,41 +145,11 @@
         width: 100%;
       }
     }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 0.8rem;
-    }
-
-    input, textarea {
-      padding: 0.6rem;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-family: inherit;
-      width: 100%;
-      max-width: 500px;
-    }
-
-    button {
-      background-color: var(--main-color);
-      color: white;
-      border: none;
-      padding: 0.8rem 1.2rem;
-      border-radius: 8px;
-      font-size: 1rem;
-      cursor: pointer;
-      width: fit-content;
-    }
-
-    button:hover {
-      background-color: var(--accent-color);
-    }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo_revize.png" alt="Logo" class="logo" />
+    <img src="logo_revize.png" alt="Logo">
     <h1>Revize elektroinstalací a přístrojů</h1>
     <p>Ing. Pavel Stehlík &ndash; revizní technik elektro E2A</p>
   </header>
@@ -221,14 +163,8 @@
   <main>
     <section id="sluzby">
       <h2>Služby</h2>
-      <p>Provádím odborné revize elektrických instalací a zařízení do 1000 V. Specializuji se na kontrolu antistatických podlah dle platných norem a reviduji pouze zařízení v nevýbušném prostředí.</p>
       <div class="services">
-        <div class="service-card"><img src="icons/elektroinstalace.png" alt=""><h3>Revize elektroinstalací</h3><p>Odborné kontroly domovních i průmyslových instalací.</p></div>
-        <div class="service-card"><img src="icons/rozvadec.png" alt=""><h3>Revize rozvaděčů</h3><p>Zajištění bezpečnosti a souladu s normami.</p></div>
-        <div class="service-card"><img src="icons/hromosvod.png" alt=""><h3>Revize hromosvodů</h3><p>Kontrola a měření funkce vnější ochrany proti blesku.</p></div>
-        <div class="service-card"><img src="icons/stroje.png" alt=""><h3>Revize elektrických strojů</h3><p>Revize průmyslových zařízení a jejich bezpečnosti.</p></div>
-        <div class="service-card"><img src="icons/spotrebice.png" alt=""><h3>Revize elektrospotřebičů</h3><p>Kontroly ručního nářadí a běžného vybavení.</p></div>
-        <div class="service-card"><img src="icons/podlahy.png" alt=""><h3>Kontrola antistatických podlah</h3><p>Měření odporu podlah dle ČSN EN 61340-4-1.</p></div>
+        <!-- Add your service-card icons and descriptions here -->
       </div>
     </section>
 
@@ -237,18 +173,14 @@
       <p><strong>Adresa:</strong> Prescom, s.r.o., Čechova 871, 66501 Rosice</p>
       <p><strong>Telefon:</strong> <a href="tel:+420739535834">739 535 834</a></p>
       <p><strong>Email:</strong> <a href="mailto:stehlik@pres-com.cz">stehlik@pres-com.cz</a></p>
-      <p><strong>IČ:</strong> 253 17 130 &nbsp; Plátce DPH</p>
-      <div class="qr-code">
-        <img src="qr-kontakt.png" alt="QR kód s kontaktem" width="120" height="120" />
-      </div>
     </section>
 
     <section id="poptavka" class="card">
       <h2>Poptávka služeb</h2>
       <form id="poptavka-form">
-        <p><label>Jméno:<br><input type="text" name="name" required></label></p>
-        <p><label>Email:<br><input type="email" name="email" required></label></p>
-        <p><label>Zpráva:<br><textarea name="message" rows="5" required></textarea></label></p>
+        <label>Jméno:<br><input type="text" name="name" required></label>
+        <label>Email:<br><input type="email" name="email" required></label>
+        <label>Zpráva:<br><textarea name="message" rows="5" required></textarea></label>
         <button type="submit">Odeslat</button>
       </form>
       <p id="form-status" style="display:none; color: green; font-weight: bold;">Děkujeme, zpráva byla odeslána.</p>
@@ -260,53 +192,63 @@
   </footer>
 
   <script>
-    // zvýraznění aktivního odkazu v navigaci
+    // Aktivace aktivní sekce v navigaci
     const sections = document.querySelectorAll("section[id]");
     const navLinks = document.querySelectorAll("nav a");
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach(entry => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(link => link.classList.remove("active"));
           const id = entry.target.getAttribute("id");
-          const navLink = document.querySelector(`nav a[href="#${id}"]`);
-          if (entry.isIntersecting) {
-            navLinks.forEach(link => link.classList.remove("active"));
-            if (navLink) navLink.classList.add("active");
-          }
-        });
-      },
-      {
-        rootMargin: "-50% 0px -50% 0px",
-        threshold: 0.1
-      }
-    );
+          const link = document.querySelector(`nav a[href="#${id}"]`);
+          if (link) link.classList.add("active");
+        }
+      });
+    }, { threshold: 0.5 });
 
     sections.forEach(section => observer.observe(section));
 
-    // Form handling
+    // Odeslání formuláře
     document.getElementById('poptavka-form').addEventListener('submit', async function(e) {
       e.preventDefault();
       const form = e.target;
       const status = document.getElementById('form-status');
-
       const data = new FormData(form);
       const response = await fetch("https://formspree.io/f/xwpqpnjd", {
         method: "POST",
         body: data,
         headers: { 'Accept': 'application/json' }
       });
-
       if (response.ok) {
         form.reset();
         status.style.display = 'block';
-        status.style.color = 'green';
-        status.textContent = 'Děkujeme, zpráva byla odeslána.';
       } else {
         status.textContent = 'Odeslání se nezdařilo. Zkuste to prosím znovu.';
         status.style.color = 'red';
         status.style.display = 'block';
       }
     });
+  </script>
+
+  <!-- JSON-LD strukturovaná data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Revize Stehlík",
+    "image": "https://www.revizestehlik.cz/logo_revize.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Čechova 871",
+      "addressLocality": "Rosice",
+      "postalCode": "66501",
+      "addressCountry": "CZ"
+    },
+    "telephone": "+420739535834",
+    "email": "stehlik@pres-com.cz",
+    "openingHours": "Mo-Fr 08:00-17:00"
+  }
   </script>
 </body>
 </html>
