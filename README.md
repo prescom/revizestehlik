@@ -1,6 +1,6 @@
 # Web Revize Stehlík
 
-Statická webová prezentace revizního technika Pavla Stehlíka.  
+Statická webová prezentace revizního technika Ing. Pavla Stehlíka.  
 Běží na GitHub Pages: https://www.revizestehlik.cz
 
 ## Obsah
