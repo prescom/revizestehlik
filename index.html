@@ -21,14 +21,12 @@
   <meta name="theme-color" content="#ffffff">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta name="description" content="Revize elektroinstalací, rozvaděčů a přístrojů – Ing. Pavel Stehlík, revizní technik E2A.">
   <meta name="author" content="Ing. Pavel Stehlík">
   <meta property="og:title" content="Revize Stehlík">
   <meta property="og:description" content="Revize elektroinstalací a zařízení – Ing. Pavel Stehlík">
   <meta property="og:url" content="https://www.revizestehlik.cz">
   <meta property="og:image" content="https://www.revizestehlik.cz/logo.svg">
-
   <title>Revize Stehlík</title>
   <style>
     :root {
@@ -36,6 +34,10 @@
       --accent-color: #f77f00;
       --bg-color: #f9f9f9;
       --text-color: #222;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -69,10 +71,8 @@
     }
 
     nav {
-      background: white;
-      padding: 0.5rem;
       text-align: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      padding: 1rem;
     }
 
     nav a {
@@ -80,6 +80,7 @@
       text-decoration: none;
       color: var(--main-color);
       font-weight: bold;
+      transition: color 0.3s;
     }
 
     nav a:hover {
@@ -101,15 +102,11 @@
       font-size: 1.5rem;
     }
 
-    .card {
+    .contact, .card {
       background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
       padding: 1rem;
-    }
-
-    .contact {
       border-left: 4px solid var(--accent-color);
+      border-radius: 8px;
     }
 
     .contact p {
@@ -169,15 +166,39 @@
     }
 
     @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.5rem;
-      }
-      main {
-        padding: 1rem;
-      }
       .service-card {
         width: 100%;
       }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
+    input, textarea {
+      padding: 0.6rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-family: inherit;
+      width: 100%;
+      max-width: 500px;
+    }
+
+    button {
+      background-color: var(--main-color);
+      color: white;
+      border: none;
+      padding: 0.8rem 1.2rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      width: fit-content;
+    }
+
+    button:hover {
+      background-color: var(--accent-color);
     }
   </style>
 </head>
@@ -191,6 +212,7 @@
   <nav>
     <a href="#sluzby">Služby</a>
     <a href="#kontakt">Kontakt</a>
+    <a href="#poptavka">Poptávka</a>
   </nav>
 
   <main>
@@ -231,15 +253,31 @@
       </div>
     </section>
 
-    <section id="kontakt" class="contact card">
+    <section id="kontakt" class="contact">
       <h2>Kontakt</h2>
       <p><strong>Adresa:</strong> Prescom, s.r.o., Čechova 871, 66501 Rosice</p>
-      <p><strong>Telefon:</strong> <a href="tel:+420739535835">739 535 834</a></p>
+      <p><strong>Telefon:</strong> <a href="tel:+420739535834">739 535 834</a></p>
       <p><strong>Email:</strong> <a href="mailto:stehlik@pres-com.cz">stehlik@pres-com.cz</a></p>
       <p><strong>IČ: </strong>253 17 130 Plátce DPH</p>
       <div class="qr-code">
         <img src="qr-kontakt.png" alt="QR kód s kontaktem" width="120" height="120">
       </div>
+    </section>
+
+    <section id="poptavka" class="card">
+      <h2>Poptávka služeb</h2>
+      <form action="https://formspree.io/f/xwpqpnjd" method="POST">
+        <label for="name">Jméno:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Zpráva:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Odeslat</button>
+      </form>
     </section>
   </main>
 
