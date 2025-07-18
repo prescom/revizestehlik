@@ -29,9 +29,8 @@
   <meta property="og:url" content="https://www.revizestehlik.cz">
   <meta property="og:image" content="https://www.revizestehlik.cz/logo.svg">
 
-  
   <title>Revize Stehlík</title>
-    <style>
+  <style>
     :root {
       --main-color: #003049;
       --accent-color: #f77f00;
@@ -69,6 +68,24 @@
       margin-bottom: 1rem;
     }
 
+    nav {
+      background: white;
+      padding: 0.5rem;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: var(--main-color);
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
     main {
       padding: 2rem 1rem;
       max-width: 800px;
@@ -84,9 +101,14 @@
       font-size: 1.5rem;
     }
 
-    .contact {
+    .card {
       background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
       padding: 1rem;
+    }
+
+    .contact {
       border-left: 4px solid var(--accent-color);
     }
 
@@ -111,6 +133,41 @@
       color: #666;
     }
 
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .service-card {
+      background: white;
+      border: 1px solid #ddd;
+      border-left: 5px solid var(--accent-color);
+      border-radius: 8px;
+      padding: 1rem;
+      width: calc(50% - 1rem);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .service-card img {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 0.5rem;
+    }
+
+    .service-card h3 {
+      margin: 0.5rem 0 0.2rem;
+      font-size: 1.1rem;
+      color: var(--main-color);
+    }
+
+    .service-card p {
+      font-size: 0.95rem;
+      color: #444;
+    }
+
     @media (max-width: 600px) {
       header h1 {
         font-size: 1.5rem;
@@ -118,48 +175,10 @@
       main {
         padding: 1rem;
       }
+      .service-card {
+        width: 100%;
+      }
     }
-      .services {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
-.service-card {
-  background: white;
-  border: 1px solid #ddd;
-  border-left: 5px solid var(--accent-color);
-  border-radius: 8px;
-  padding: 1rem;
-  width: calc(50% - 1rem);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  text-align: center;
-}
-
-.service-card img {
-  width: 48px;
-  height: 48px;
-  margin-bottom: 0.5rem;
-}
-
-.service-card h3 {
-  margin: 0.5rem 0 0.2rem;
-  font-size: 1.1rem;
-  color: var(--main-color);
-}
-
-.service-card p {
-  font-size: 0.95rem;
-  color: #444;
-}
-
-@media (max-width: 600px) {
-  .service-card {
-    width: 100%;
-  }
-}
-
   </style>
 </head>
 <body>
@@ -178,42 +197,41 @@
     <section id="sluzby">
       <h2>Služby</h2>
       <p>Provádím odborné revize elektrických instalací a zařízení do 1000 V. Specializuji se na kontrolu antistatických podlah dle platných norem a reviduji pouze zařízení v nevýbušném prostředí.</p>
-<div class="services">
-  <div class="service-card">
-      <img src="icons/elektroinstalace.png" alt="Elektroinstalace">
-    <h3>Revize elektroinstalací</h3>
-    <p>Odborné kontroly domovních i průmyslových instalací.</p>
-  </div>
-  <div class="service-card">
-    <img src="icons/rozvadec.png" alt="Rozvaděče">
-    <h3>Revize rozvaděčů</h3>
-    <p>Zajištění bezpečnosti a souladu s normami.</p>
-  </div>
-  <div class="service-card">
-    <img src="icons/hromosvod.png" alt="Hromosvody">
-    <h3>Revize hromosvodů</h3>
-    <p>Kontrola a měření funkce vnější ochrany proti blesku.</p>
-  </div>
-  <div class="service-card">
-    <img src="icons/stroje.png" alt="Stroje a přístroje">
-    <h3>Revize elektrických strojů</h3>
-    <p>Revize průmyslových zařízení a jejich bezpečnosti.</p>
-  </div>
-  <div class="service-card">
-    <img src="icons/spotrebice.png" alt="Spotřebiče">
-    <h3>Revize elektrospotřebičů</h3>
-    <p>Kontroly ručního nářadí a běžného vybavení.</p>
-  </div>
-  <div class="service-card">
-    <img src="icons/podlahy.png" alt="Antistatická podlaha">
-    <h3>Kontrola antistatických podlah</h3>
-    <p>Měření odporu podlah dle ČSN EN 61340-4-1.</p>
-  </div>
-</div>
-
+      <div class="services">
+        <div class="service-card">
+          <img src="icons/elektroinstalace.png" alt="Elektroinstalace">
+          <h3>Revize elektroinstalací</h3>
+          <p>Odborné kontroly domovních i průmyslových instalací.</p>
+        </div>
+        <div class="service-card">
+          <img src="icons/rozvadec.png" alt="Rozvaděče">
+          <h3>Revize rozvaděčů</h3>
+          <p>Zajištění bezpečnosti a souladu s normami.</p>
+        </div>
+        <div class="service-card">
+          <img src="icons/hromosvod.png" alt="Hromosvody">
+          <h3>Revize hromosvodů</h3>
+          <p>Kontrola a měření funkce vnější ochrany proti blesku.</p>
+        </div>
+        <div class="service-card">
+          <img src="icons/stroje.png" alt="Stroje a přístroje">
+          <h3>Revize elektrických strojů</h3>
+          <p>Revize průmyslových zařízení a jejich bezpečnosti.</p>
+        </div>
+        <div class="service-card">
+          <img src="icons/spotrebice.png" alt="Spotřebiče">
+          <h3>Revize elektrospotřebičů</h3>
+          <p>Kontroly ručního nářadí a běžného vybavení.</p>
+        </div>
+        <div class="service-card">
+          <img src="icons/podlahy.png" alt="Antistatická podlaha">
+          <h3>Kontrola antistatických podlah</h3>
+          <p>Měření odporu podlah dle ČSN EN 61340-4-1.</p>
+        </div>
+      </div>
     </section>
 
-    <section id="kontakt" class="contact">
+    <section id="kontakt" class="contact card">
       <h2>Kontakt</h2>
       <p><strong>Adresa:</strong> Prescom, s.r.o., Čechova 871, 66501 Rosice</p>
       <p><strong>Telefon:</strong> <a href="tel:+420739535835">739 535 834</a></p>
