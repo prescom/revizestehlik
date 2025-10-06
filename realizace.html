@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html lang="cs">
 <head>
@@ -66,5 +67,133 @@
     <p>© 2025 Prescom s.r.o. | <a href="mailto:info@pres-com.cz">info@pres-com.cz</a> | T: 739 535 834</p>
     <p>Čechova 871, 66501 Rosice</p>
   </footer>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Realizace elektro – Prescom s.r.o.</title>
+  <meta name="description" content="Elektroinstalační práce NN, plány preventivní údržby, HSE a kontroly výrobních technologií, projektová dokumentace.">
+  <link rel="icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root{ --main:#003049; --accent:#f77f00; --bg:#f6f7fb; --text:#1f2a37; --hero:url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1920&q=80'); }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0; font-family:Roboto,system-ui,-apple-system,Segoe UI,Arial,sans-serif; color:var(--text); background:var(--bg); line-height:1.6}
+    img{max-width:100%; height:auto} a{text-decoration:none; color:inherit}
+    .nav{position:sticky; top:0; z-index:50; background:#ffffffcc; backdrop-filter:saturate(180%) blur(8px); border-bottom:1px solid #e5e7eb}
+    .nav-inner{max-width:1200px; margin:0 auto; padding:10px 16px; display:flex; align-items:center; justify-content:space-between}
+    .brand{display:flex; gap:10px; align-items:center; color:var(--main); font-weight:700}
+    .brand img{width:36px; height:36px}
+    .menu a{color:var(--main); font-weight:700; padding:8px 10px; border-radius:10px; margin-left:8px}
+    .menu a:hover{color:var(--accent)} .menu a.active{background:#fff1e6; color:#b85b00}
+    .hero{position:relative; color:#fff; text-align:center; overflow:hidden}
+    .hero::before{content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(0,0,0,.55),rgba(0,0,0,.35)), var(--hero) center/cover no-repeat; z-index:-1}
+    .hero-inner{max-width:1100px; margin:0 auto; padding:90px 18px 110px}
+    .hero h1{margin:0 0 10px; font-size:clamp(28px,4.5vw,48px)}
+    .wave svg{width:100%; height:auto; display:block}
+    .wrap{max-width:1100px; margin:0 auto; padding:40px 18px}
+    .grid{display:grid; gap:18px; grid-template-columns:repeat(2,minmax(0,1fr))}
+    @media (max-width:820px){ .grid{grid-template-columns:1fr} }
+    .card{background:#fff; border:1px solid #e5e7eb; border-radius:16px; padding:20px; box-shadow:0 8px 20px rgba(0,0,0,.04)}
+    .service{display:grid; gap:14px; grid-template-columns:60px 1fr; align-items:start}
+    .service .ico{width:60px; height:60px; border-radius:14px; background:#fff5ea; display:grid; place-items:center}
+    .service .ico img{width:32px; height:32px}
+    .btn{display:inline-block; background:var(--accent); color:#fff; border-radius:10px; padding:12px 18px; font-weight:700; margin-top:8px}
+    .card-form{border-left:5px solid var(--accent)} form{display:grid; gap:12px}
+    input, textarea{padding:10px 12px; border:1px solid #d1d5db; border-radius:10px; font:inherit} textarea{min-height:120px}
+    .status{display:none; font-weight:700; margin-top:6px} .ok{color:#15803d}.err{color:#b91c1c}
+    footer{padding:26px 18px; text-align:center; color:#6b7280}
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <div class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="brand"><img src="logo_revize.png" alt="Logo"><span>Prescom – Realizace</span></a>
+      <nav class="menu">
+        <a href="index.html">Revize</a>
+        <a href="realizace.html" class="active">Realizace</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-inner">
+      <h1>Realizace elektroinstalací a údržba</h1>
+      <p>Elektroinstalační práce NN • plány preventivní údržby • HSE a kontroly výrobních technologií • projektová dokumentace</p>
+    </div>
+    <div class="wave"><svg viewBox="0 0 1440 90" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,64 C240,16 480,16 720,48 C960,80 1200,80 1440,48 L1440,0 L0,0 Z" fill="#f6f7fb"/></svg></div>
+  </header>
+
+  <!-- SLUŽBY – 4 karty -->
+  <main class="wrap" id="sluzby">
+    <div class="grid">
+      <section class="card service">
+        <div class="ico"><img src="icons/elektroinstalace.svg" alt=""></div>
+        <div>
+          <h2>Elektroinstalační práce NN</h2>
+          <p>Instalace a rekonstrukce elektroinstalací v obytných, komerčních i průmyslových objektech. Důraz na bezpečnost, dokumentaci a uvedení do provozu.</p>
+        </div>
+      </section>
+
+      <section class="card service">
+        <div class="ico"><img src="icons/preventivni-udrzba.svg" alt=""></div>
+        <div>
+          <h2>Preventivní údržba</h2>
+          <p>Tvorba a realizace plánů preventivní údržby rozvaděčů, strojů a rozvodů. Cílem je snížit poruchovost a prodloužit životnost zařízení.</p>
+        </div>
+      </section>
+
+      <section class="card service">
+        <div class="ico"><img src="icons/hse-vyrobni-technologie.svg" alt=""></div>
+        <div>
+          <h2>HSE a výrobní technologie</h2>
+          <p>Kontroly výrobních zařízení z hlediska bezpečnosti, provozuschopnosti a souladu s požadavky HSE. Nápravná opatření a evidence.</p>
+        </div>
+      </section>
+
+      <section class="card service">
+        <div class="ico"><img src="icons/projektova-dokumentace.svg" alt=""></div>
+        <div>
+          <h2>Projektová dokumentace</h2>
+          <p>Zpracování a vedení dokumentace elektroinstalací a technologických celků. Aktualizace skutečného stavu, štítkování a značení.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- FORM -->
+  <section class="wrap" id="kontakt">
+    <div class="card card-form">
+      <h2 style="color:var(--main);margin-top:0">Poptávka realizace / servisu</h2>
+      <form id="form" action="https://formspree.io/f/xwpqpnjd" method="POST">
+        <input type="text" name="name" placeholder="Jméno a příjmení" required>
+        <input type="email" name="email" placeholder="E-mail" required>
+        <textarea name="message" placeholder="Stručně popište požadovanou realizaci / údržbu" required></textarea>
+        <button class="btn" type="submit">Odeslat</button>
+      </form>
+      <p id="ok" class="status ok">Děkujeme, zpráva byla odeslána.</p>
+      <p id="er" class="status err">Odeslání se nezdařilo. Zkuste to prosím znovu.</p>
+    </div>
+  </section>
+
+  <footer>&copy; 2025 Prescom s.r.o.</footer>
+
+  <script>
+    const f=document.getElementById('form'), ok=document.getElementById('ok'), er=document.getElementById('er');
+    f?.addEventListener('submit', async (e)=>{e.preventDefault(); ok.style.display=er.style.display='none';
+      const r=await fetch(f.action,{method:'POST',body:new FormData(f),headers:{Accept:'application/json'}});
+      if(r.ok){f.reset(); ok.style.display='block';} else {er.style.display='block';}
+    });
+  </script>
 </body>
 </html>
